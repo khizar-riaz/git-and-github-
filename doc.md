@@ -132,14 +132,42 @@ ls
 git status
 
 ```
+
 - Now Git is aware of the file, but has not added it to our repository!
 - Files in your Git repository folder can be in one of 2 states:
--   1. Tracked - files that Git knows about and are added to the repository.
--   2. Untracked - files that are in your working directory, but not added to the repository.
+  1. Tracked - files that Git knows about and are added to the repository.
+  2. Untracked - files that are in your working directory, but not added to the repository.
 - When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.
 
+## Git Staging Environment
 
+- concepts of `Staging Environment` and the `Commit` are One of the core functions of Git.
+- Staged files are files that are ready to be committed to the repository you are working on.
+- For now, we are done working with test.txt. So we can add it to the Staging Environment:
 
+```
 
+git add test.txt
+
+```
+
+- The file should be Staged. Let's check the status:
+
+```
+
+git status
+
+```
+
+- Now our test.txt file has added to Staging Environment.
+- We can also stage more than one file at a time. Following is the command:
+
+```
+
+git add --all
+
+```
+
+- Now all files are added to the Staging Environment, and we are ready to do our first commit.
 
 
