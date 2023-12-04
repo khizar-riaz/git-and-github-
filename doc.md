@@ -70,32 +70,34 @@ git --version
 
 ```
 
-#### macOS:
+## Configure Git
 
-- Open Terminal.
-- Install Homebrew by running the following command:
-
-``` 
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-```
-
-- After installing Homebrew, run the following command to install Git:
+- Now let Git know who you are. This is important for version control systems, as each Git commit uses this information:
 
 ``` 
 
-brew install git
+git config --global user.name "khizar-riaz"
+
+git config --global user.email "khizarriaz012@gmail.com"
+
+```
+- Change the user name and e-mail address to your own.
+- Use global to set the username and e-mail for every repository on your computer. If you want to set the username/e-mail for just the current repo, you can remove global
+
+## Creating Git Folder
+
+- let's create a new folder for our project:
 
 ```
 
-- Type the following command in Terminal:
+mkdir myproject
 
-``` 
-
-git --version
+cd myproject
 
 ```
+
+- mkdir makes a new directory.
+- cd changes the current working directory.
 
 
 
