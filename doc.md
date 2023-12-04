@@ -170,4 +170,46 @@ git add --all
 
 - Now all files are added to the Staging Environment, and we are ready to do our first commit.
 
+## Git Commit
+
+- Adding commits keep track of our progress and changes as we work. 
+- Git considers each commit change point or "save point".
+- It is a point in the project you can go back to if you find a bug, or want to make a change.
+- When we commit, we should always include a message.
+- By adding clear messages to each commit, it is easy for yourself (and others) to see what has changed and when.
+
+```
+
+git commit -m "First release of text file"
+
+```
+
+- The commit command performs a commit, and the -m "message" adds a message.
+- The Staging Environment has been committed to our repo, with the message:"First release of text file"
+
+#### Git Commit without Stage
+
+- Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes directly, skipping the staging environment. The `-a` option will automatically stage every changed, already tracked file.
+- Let's add a small update to text.txt: add new line
+
+```
+
+git status --short
+
+git commit -a -m "Updated text.txt with a new line"
+
+```
+
+- Skipping the Staging Environment is not generally recommended.
+- Skipping the stage step can sometimes make you include unwanted changes.
+
+#### Git log
+
+- To view the history of commits for a repository, you can use the log command:
+
+```
+
+git log
+
+```
 
