@@ -99,6 +99,20 @@ cd myproject
 - mkdir makes a new directory.
 - cd changes the current working directory.
 
+## Initialize Git
+
+- After  navigation to the correct folder, you can initialize Git on that folder:
+
+```
+git init 
+
+```
+- It will Initialized empty Git repository in the particular folder and response is like (Initialized empty Git repository in /Users/user/myproject/.git/).
+- Git now knows that it should watch the folder you initiated it on. Git creates a hidden folder to keep track of changes.
+
+
+
+
 
 
 
