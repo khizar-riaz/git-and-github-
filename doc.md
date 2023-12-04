@@ -23,5 +23,82 @@
 
 - Git is used to collaborate on code.
 
+## Git Installation
+
+- To install Git on your computer, follow these steps based on your operating system.
+
+#### Windows:
+
+- Git for Windows:
+- Download the installer from the official Git website: Git for Windows.
+- Run the downloaded installer.
+- Follow the installation steps, accepting the default options.
+- Verify Installation:
+- Open a Command Prompt or Git Bash.
+- Type the following command and press Enter:
+
+``` 
+
+git --version
+
+```
+
+#### macOS:
+
+- Open Terminal.
+- Install Homebrew by running the following command:
+
+``` 
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+```
+
+- After installing Homebrew, run the following command to install Git:
+
+``` 
+
+brew install git
+
+```
+
+- Type the following command in Terminal:
+
+``` 
+
+git --version
+
+```
+
+#### macOS:
+
+- Open Terminal.
+- Install Homebrew by running the following command:
+
+``` 
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+```
+
+- After installing Homebrew, run the following command to install Git:
+
+``` 
+
+brew install git
+
+```
+
+- Type the following command in Terminal:
+
+``` 
+
+git --version
+
+```
+
+
+
+
 
 
