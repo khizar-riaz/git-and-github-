@@ -1,3 +1,5 @@
 1. Adding a new line.  use for skipping stagging environment and directly commit changes.
 
 2. new line for making a new branch
+
+3. error solved
