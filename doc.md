@@ -370,3 +370,40 @@ git commit -m "updated test.txt with emergency fix"
 
 - Now we have a fix ready for master, and we need to merge the two branches i.e  `main` and `emergency-fix`.
 
+## Git Branch Merge
+
+- We have the emergency fix ready, and so let's merge the master and emergency-fix branches.
+- First, we need to change to the master branch:
+
+```
+
+git checkout main
+
+
+```
+
+- By this we are now in main branch or Switched to branch `main`.
+- Now we merge the current branch `main` with `emergency-fix`.
+
+```
+
+git merge emergency-fix
+
+
+```
+- Since the emergency-fix branch came directly from main, and no other changes had been made to main while we were working, Git sees this as a continuation of main. So it can "Fast-forward", just pointing both main and emergency-fix to the same commit.
+- As `main` and `emergency-fix` are essentially the same now, we can delete emergency-fix, as it is no longer needed:
+
+```
+
+git branch -d emergency-fix
+
+
+```
+
+
+
+
+
+
+
