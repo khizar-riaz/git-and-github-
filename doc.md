@@ -213,3 +213,32 @@ git log
 
 ```
 
+- Note: Short status flags are:
+
+| File Status           | File Sign |
+| --------------------- | ----------|
+| Untracked files       | ??        |
+| Files added to stage  | A         |
+| Modified files        | M         |
+| Deleted files         | D         |
+
+## Git Help
+
+- Git help can be use to remember commands or options for commands.
+- There are a couple of different ways you can use the help command in command line.
+- `git command -help` is use to see all the available options for the specific command.
+- For example if we need help regarding `git commit` command:
+
+```
+
+git commit -help
+
+```
+
+- `git help --all` is use to see all possible commands
+
+```
+
+git help --all
+
+```
