@@ -401,9 +401,28 @@ git branch -d emergency-fix
 
 ```
 
+## Git and GitHub
 
+- Go to GitHub and sign up for an account.
+- Now that you have made a GitHub account, sign in, and create a new Repo.
+- Since we have already set up a local Git repo above, we are going to push that to GitHub:
+- Copy the URL, or click the clipboard marked in the image above.
+- Now paste it the following command:
 
+```
 
+git remote add origin https://github.com/khizar-riaz/git-and-github.git
 
+```
+- git remote add origin URL specifies that you are adding a remote repository, with the specified URL, as an origin to your local Git repo.
+- Now we are going to push our master branch to the origin url, and set it as the default remote branch:
+
+```
+
+git push --set-upstream origin master
+
+```
+
+- Now, go back into GitHub and see that the repository has been updated:
 
 
