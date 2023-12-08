@@ -495,3 +495,23 @@ git status
 ```
 
 - There! Your local git is up to date!
+
+#### Git Pull
+
+- But what if you just want to update your local repository, without going through all those steps?
+- pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you are working on.
+- Make another change to the `test.txt` file on GitHub.
+
+```
+
+git pull origin
+
+```
+
+- That is how you keep your local Git up to date from a remote repository.
+
+
+
+
+
+
