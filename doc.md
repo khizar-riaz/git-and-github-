@@ -406,6 +406,9 @@ git branch -d emergency-fix
 - Go to GitHub and sign up for an account.
 - Now that you have made a GitHub account, sign in, and create a new Repo.
 - Since we have already set up a local Git repo above, we are going to push that to GitHub:
+
+## Push Local Repository to GitHub
+
 - Copy the URL, or click the clipboard marked in the image above.
 - Now paste it the following command:
 
@@ -425,4 +428,70 @@ git push --set-upstream origin master
 
 - Now, go back into GitHub and see that the repository has been updated:
 
+## Git Pull from GitHub
 
+- When working as a team on a project, it is important that everyone stays up to date.
+- Any time you start working on a project, you should get the most recent changes to your local copy.
+- With Git, you can do that with pull.
+
+- pull is a combination of 2 different commands:`fetch` and `merge`.
+- Let's take a closer look into how fetch, merge, and pull works.
+-  we make some changes in `test.txt` in github repo and added a line "4. change for fetch commmand"
+
+#### Git Fetch
+
+- fetch gets all the change history of a tracked branch/repo.
+- So, on your local Git, fetch updates to see what has changed on GitHub:
+
+```
+
+git fetch origin
+
+```
+
+- Now that we have the recent changes, we can check our status:
+
+```
+
+git status
+
+```
+
+- We are behind the origin/master by 1 commit. That should be the updated `test.txt`, but lets double check by viewing the log:
+
+```
+
+git log origin/master
+
+```
+
+- That looks as expected, but we can also verify by showing the differences between our local master and origin/master:
+
+```
+
+git diff origin/master
+
+```
+
+- That looks precisely as expected! Now we can safely merge.
+
+#### Git Merge
+
+- merge combines the current branch, with a specified branch.
+- We have confirmed that the updates are as expected, and we can merge our current branch (master) with origin/master:
+
+```
+
+git merge origin/master
+
+```
+
+- Check our status again to confirm we are up to date:
+
+```
+
+git status
+
+```
+
+- There! Your local git is up to date!
