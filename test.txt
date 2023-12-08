@@ -7,3 +7,5 @@
 4. change for fetch commmand
 
 5. change for pull command
+
+6. Updated test.txt file for push` in `test.txt
