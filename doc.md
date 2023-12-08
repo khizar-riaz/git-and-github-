@@ -510,7 +510,36 @@ git pull origin
 
 - That is how you keep your local Git up to date from a remote repository.
 
+## Push Changes to GitHub
 
+- Let's try making some changes to our local git and pushing them to GitHub.
+-  Add line `6. Updated test.txt file for push` in `test.txt` file.
+
+- Commit the changes:
+
+```
+
+git commit -a -m "Updated test.txt file for push"
+
+```
+
+- Check the status:
+
+```
+
+git status
+
+```
+
+- Now push our changes to our remote origin:
+
+```
+
+git push origin
+
+```
+
+- Go to GitHub, and confirm that the repository has a new commit:
 
 
 
