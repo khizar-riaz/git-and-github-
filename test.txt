@@ -5,3 +5,5 @@
 3. error solved
 
 4. change for fetch commmand
+
+5. change for pull command
